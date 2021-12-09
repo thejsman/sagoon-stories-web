@@ -38,30 +38,24 @@ export default {
         await this.getStory(urlParams);
       }
     } else {
-      alert("check 2");
       await this.getAllStory();
     }
   },
   methods: {
     async getStory(storyId) {
-      const headers = {
-        "Content-Type": "application/json",
-        "Utm-Campaign-Id": "iFLXGq9j82DnzWQyd8s9SoTVX3cpDzTc",
-      };
-
       try {
         const result = await axios.get(
           `https://bt4a37ws83.execute-api.ap-southeast-1.amazonaws.com/live/story/detail/${storyId}?Utm-Campaign-Id=iFLXGq9j82DnzWQyd8s9SoTVX3cpDzTc`,
           {
-            headers: { headers },
+            headers: {
+              "Content-Type": "application/json",
+              "Utm-Campaign-Id": "iFLXGq9j82DnzWQyd8s9SoTVX3cpDzTc",
+            },
           }
         );
 
-        console.log(
-          { result: result.data },
-          result.data.headers["Utm-Campaign-Id"]
-        );
         this.storyTop = result.data.secrets;
+
         await this.getAllStory();
       } catch (error) {
         console.log("Error in get story: ", { error });
