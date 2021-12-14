@@ -1,16 +1,13 @@
 <template>
   <div class="header">
     <div class="header-center">
-      <a href="#" class="logo">
+      <a href="https://www.sagoonlite.com/" class="logo">
         <img
           width="120"
           alt="sagoon Lite"
           src="https://cdn.sagoon.com/common/common/sagoon_logo.svg"
         />
       </a>
-      <span class="log-in">
-        <a href="#">Sign In</a>
-      </span>
     </div>
   </div>
 </template>
@@ -33,21 +30,21 @@
 .header-center {
   margin: 0 auto;
   max-width: 768px;
+  text-align: center;
 }
 .logo {
-  float: left;
   display: inline-block;
 }
 
-.log-in {
+/* .log-in {
   float: right;
   display: inline-block;
   margin: 20px 16px;
-}
+} 
 .log-in a {
   text-decoration: none;
   color: #4440c7;
-}
+}*/
 </style>
 <script>
 export default {

@@ -2,7 +2,6 @@
   <div id="app">
     <Header />
     <Story :story="storyTop" />
-    <!-- <Story :story="storyTop" /> -->
     <Footer />
   </div>
 </template>
@@ -38,7 +37,7 @@ export default {
         await this.getStory(urlParams);
       }
     } else {
-      await this.getAllStory();
+      // await this.getAllStory();
     }
   },
   methods: {
@@ -55,12 +54,11 @@ export default {
         );
 
         this.storyTop = result.data.secrets;
-
-        await this.getAllStory();
+        // await this.getAllStory();
       } catch (error) {
         console.log("Error in get story: ", { error });
         this.storyTop = [];
-        await this.getAllStory();
+        // await this.getAllStory();
       }
     },
     async getAllStory() {
@@ -72,8 +70,6 @@ export default {
         } else {
           this.storyTop = [...this.storyAll];
         }
-
-        // console.log("This story all: ", this.storyTop);
       } catch (error) {
         console.log("Error in get storyAll: ", { error });
       }

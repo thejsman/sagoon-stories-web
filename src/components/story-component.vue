@@ -1,11 +1,6 @@
 <template>
   <div class="card-secret-main">
     <div class="card secret-card" v-for="(secret, index) in story" :key="index">
-      <!-- <div
-      class="card secret-card"
-      v-for="(secret, index) in filteredItems"
-      :key="(secret, index)"
-    > -->
       <div class="card-header">
         <div class="media">
           <div class="media-left">
@@ -31,7 +26,7 @@
             </div>
           </div>
 
-          <div class="media-body"></div>
+          <!-- <div class="media-body"></div>
           <div class="media-right">
             <div class="dropdown dropdown-menu-end">
               <button
@@ -47,7 +42,7 @@
                 <li><a class="dropdown-item" href="#">Link</a></li>
               </ul>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -75,6 +70,10 @@
                 }
               "
             />
+            <i
+              class="zmdi zmdi-play-circle-outline zmdi-hc-fw ply-btn"
+              v-if="item.type == 'video/mp4' || item.type == 'video'"
+            ></i>
 
             <!-- Modal -->
             <div
@@ -99,23 +98,29 @@
                   <div class="modal-body">
                     <div
                       class="img-show"
-                      v-if="activeImageUrl.type === 'image/jpeg'"
+                      v-if="
+                        activeImageUrl.type === 'image/jpeg' ||
+                          activeImageUrl.type === 'image'
+                      "
                     >
                       <img
                         v-bind:src="activeImageUrl.thumbnail"
                         class="img-fluid"
-                        v-bind:type="item.type"
+                        v-bind:type="activeImageUrl.type"
                       />
                     </div>
 
                     <div
                       class="video-show"
-                      v-if="activeImageUrl.type === 'video/mp4'"
+                      v-if="
+                        activeImageUrl.type === 'video/mp4' ||
+                          activeImageUrl.type === 'video'
+                      "
                     >
                       <video controls autoplay>
                         <source
                           v-bind:src="activeImageUrl.url"
-                          v-bind:type="activeImageUrl.type"
+                          v-bind:type="'video/mp4'"
                         />
                       </video>
                     </div>
@@ -123,10 +128,6 @@
                 </div>
               </div>
             </div>
-            <i
-              class="zmdi zmdi-play-circle-outline zmdi-hc-fw ply-btn"
-              v-if="item.type == 'video/mp4'"
-            ></i>
           </div>
         </div>
         <div class="wrap_p">
@@ -210,7 +211,6 @@
     </div>
   </div>
 </template>
-<style scoped></style>
 <script>
 export default {
   name: "Story",
