@@ -352,7 +352,7 @@ body {
   }
   .card.secret-card .btn-floating img,
   .card.secret-card .btn-icon img {
-    height: 100%;
+    /* height: 100%; */
     display: block;
   }
   .card.secret-card .btn-floating .shared-icon,
