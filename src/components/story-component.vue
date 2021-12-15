@@ -179,33 +179,39 @@
 
       <div class="activities-count">
         <div class="activity-sec">
-          <figure>
-            <img
-              src="https://cdn.sagoon.com/common/common/favorite_border_black.svg"
-              alt=""
-            />
-          </figure>
-          <span>{{ secret.my_reaction }} Likes</span>
+          <a href="https://sagoonapp.app.link/Kxr02zPWN3" target="_blank">
+            <figure>
+              <img
+                src="https://cdn.sagoon.com/common/common/favorite_border_black.svg"
+                alt=""
+              />
+            </figure>
+            <span>{{ secret.my_reaction }} Likes</span>
+          </a>
         </div>
 
         <div class="activity-sec">
-          <figure>
-            <img
-              src="https://cdn.sagoon.com/common/common/visibility_black.svg"
-              alt=""
-            />
-          </figure>
-          <span>{{ secret.total_view_count }} Views</span>
+          <a href="https://sagoonapp.app.link/Kxr02zPWN3" target="_blank">
+            <figure>
+              <img
+                src="https://cdn.sagoon.com/common/common/visibility_black.svg"
+                alt=""
+              />
+            </figure>
+            <span>{{ secret.total_view_count }} Views</span>
+          </a>
         </div>
 
         <div class="activity-sec">
-          <figure>
-            <img
-              src="https://cdn.sagoon.com/common/common/ios_share_black.svg"
-              alt=""
-            />
-          </figure>
-          <span>{{ secret.shared_count }} Share</span>
+          <a href="https://sagoonapp.app.link/Kxr02zPWN3" target="_blank">
+            <figure>
+              <img
+                src="https://cdn.sagoon.com/common/common/ios_share_black.svg"
+                alt=""
+              />
+            </figure>
+            <span>{{ secret.shared_count }} Share</span>
+          </a>
         </div>
       </div>
     </div>

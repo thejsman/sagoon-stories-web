@@ -79,6 +79,9 @@ body {
   /* .img-show img {
     width: 100%;
   } */
+  .img-holder figure {
+    margin: 0;
+  }
   .activities-count {
     overflow: hidden;
     padding: 12px 0px;
@@ -96,6 +99,10 @@ body {
     font-size: 12px;
     color: #757575;
     display: block;
+  }
+  .activity-sec a {
+    color: #757575;
+    text-decoration: none;
   }
   .ad-sec {
     max-width: 320px;
@@ -846,6 +853,7 @@ body {
     max-width: 100%;
     z-index: 2;
     border-radius: 0px;
+    cursor: pointer;
   }
   .card.secret-card .card-image figure {
     position: relative;
@@ -998,6 +1006,7 @@ body {
     cursor: pointer;
     margin: -25px 0 0 -32px;
     pointer-events: none;
+    cursor: pointer;
   }
   .dropdown-toggle::after {
     display: none;
@@ -1025,7 +1034,6 @@ body {
   }
   .url_info p.p-md-l {
     font-size: 14px;
-    font-weight: 100 !important;
     color: #3c3c3c;
   }
   .video-show {
