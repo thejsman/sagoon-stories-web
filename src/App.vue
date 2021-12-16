@@ -54,6 +54,7 @@ export default {
         );
 
         this.storyTop = result.data.secrets;
+        console.log(result.data);
         // await this.getAllStory();
       } catch (error) {
         console.log("Error in get story: ", { error });
