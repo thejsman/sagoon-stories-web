@@ -134,14 +134,14 @@
           <p class="" v-bind:class="getContentLength(secret.content)">
             {{ secret.content }}
           </p>
-          <p v-if="secret.color_codes.link">
+          <!-- <p v-if="secret.color_codes.link">
             <a
               style="text-decoration: underline;"
               v-bind:href="secret.color_codes.link"
               target="_blank"
               >Read More</a
             >
-          </p>
+          </p> -->
         </div>
       </div>
 
