@@ -191,7 +191,7 @@
 
       <div class="activities-count">
         <div class="activity-sec">
-          <a href="https://sagoonapp.app.link/Kxr02zPWN3" target="_blank">
+          <a href="https://sagoonapp.app.link/fb-campaign" target="_blank">
             <figure>
               <img
                 src="https://cdn.sagoon.com/common/common/favorite_border_black.svg"
@@ -203,7 +203,7 @@
         </div>
 
         <div class="activity-sec">
-          <a href="https://sagoonapp.app.link/Kxr02zPWN3" target="_blank">
+          <a href="https://sagoonapp.app.link/fb-campaign" target="_blank">
             <figure>
               <img
                 src="https://cdn.sagoon.com/common/common/visibility_black.svg"
@@ -215,7 +215,7 @@
         </div>
 
         <div class="activity-sec">
-          <a href="https://sagoonapp.app.link/Kxr02zPWN3" target="_blank">
+          <a href="https://sagoonapp.app.link/fb-campaign" target="_blank">
             <figure>
               <img
                 src="https://cdn.sagoon.com/common/common/ios_share_black.svg"
